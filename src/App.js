@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./CSS/App.css";
+import Header from "./Components/Header";
+import Body from "./Components/Body";
+import { BudgetProvider } from "./Context/BudgetContext";
+//import { AddCatModel } from "./Components/AddCatModel" <AddCatModel show/>
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BudgetProvider>
+      <div className="App">
+        <div className="header h-25">
+          <Header />
+        </div>
+
+        <div className="body mx-5">
+          <Body />
+        </div>
+
+        <div className="footer"></div>
+      </div>
+      
+    </BudgetProvider>
   );
 }
 
