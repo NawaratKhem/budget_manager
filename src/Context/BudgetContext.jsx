@@ -37,8 +37,8 @@ export const BudgetProvider = ({ children }) =>{
         return milliseconds;
       }
 
-    return <BudgetProvider 
+    return <BudgetContext.Provider 
     value={{expense, category, AddCategory, RemoveCategory, AddExpense, RemoveExpense}}>
         {children}
-    </BudgetProvider> 
+    </BudgetContext.Provider> 
 }

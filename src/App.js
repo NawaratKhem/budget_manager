@@ -1,12 +1,11 @@
 import "./CSS/App.css";
 import Header from "./Components/Header";
 import Body from "./Components/Body";
-import { BudgetProvider } from "./Context/BudgetContext";
-//import { AddCatModel } from "./Components/AddCatModel" <AddCatModel show/>
+import {CatModal} from "./Components/CatModal";
 
 function App() {
   return (
-    <BudgetProvider>
+    <>
       <div className="App">
         <div className="header h-25">
           <Header />
@@ -18,8 +17,8 @@ function App() {
 
         <div className="footer"></div>
       </div>
-      
-    </BudgetProvider>
+      <CatModal/>
+    </>
   );
 }
 

@@ -1,7 +1,7 @@
 import { Button, Form, Modal } from "react-bootstrap";
 
-export default function AddCatModel({ show, onClose }) {
-  function onSubmit() {}
+export default function AddCatModal({ show, onClose }) {
+  function onSubmit() { alert("Fuck!") }
 
   return (
     <Modal show={show} onHide={onClose}>
