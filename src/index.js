@@ -5,13 +5,14 @@ import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 import { BudgetProvider } from "./Context/BudgetContext";
 
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BudgetProvider>
-      <App />
-    </BudgetProvider>
-  </React.StrictMode>
+      <BudgetProvider>
+        <App />
+      </BudgetProvider>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
